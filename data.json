@@ -1,0 +1,96 @@
+{
+  "product": [
+    {
+      "product_name": "shoes",
+      "product_price": "300",
+      "product_image": "https://www.tracerindia.com/cdn/shop/files/1_a435560c-9b5e-4e7d-b1f4-4d81ecd11c85.jpg?v=1702054676&width=1445",
+      "product_brand": "touch",
+      "product_review": "bekar he use karne baat pata chal",
+      "product_rating": "4.5",
+      "id": "4"
+    },
+    {
+      "product_name": "shjcc",
+      "product_price": "2200",
+      "product_image": "https://images.pexels.com/photos/292999/pexels-photo-292999.jpeg?cs=srgb&dl=pexels-goumbik-292999.jpg&fm=jpg",
+      "product_brand": "touch",
+      "product_review": "sasta he pr accha he",
+      "product_rating": "5",
+      "id": "b5e7"
+    }
+  ],
+  "registration": [
+    {
+      "id": "2341",
+      "name": "Deepak",
+      "email": "dp089901@gmail.com",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGK3diR3Zi-mnOXEaj-3ewmFyRYVxGzVzZw&s",
+      "mobile": "9876543213",
+      "password": "1234",
+      "cpassword": "1234"
+    },
+    {
+      "id": "9a36",
+      "name": "Abhay",
+      "email": "abhay@gmail.com",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGK3diR3Zi-mnOXEaj-3ewmFyRYVxGzVzZw&s",
+      "mobile": "1234567890",
+      "password": "1234",
+      "cpassword": "1234"
+    },
+    {
+      "id": "eec6",
+      "name": "mandeep",
+      "email": "mandeep@gmail.com",
+      "img": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Maruti/Jimny/6182/1686117643111/front-left-side-47.jpg?impolicy=resize&imwidth=420",
+      "mobile": "0987654321",
+      "password": "1234",
+      "cpassword": "1234"
+    },
+    {
+      "id": "fabb",
+      "name": "nimra",
+      "email": "nim@gmail.com",
+      "img": "https://media.istockphoto.com/id/1195743934/vector/cute-panda-character-vector-design.jpg?s=612x612&w=0&k=20&c=J3ht-bKADmsXvF6gFIleRtfJ6NGhXnfIsrwlsUF8w80=",
+      "mobile": "7894561320",
+      "password": "1230",
+      "cpassword": "1230"
+    },
+    {
+      "id": "f9a3",
+      "name": "Tasha",
+      "email": "tk@gmail.com",
+      "img": "https://static.vecteezy.com/system/resources/previews/027/510/550/non_2x/cute-panda-dreamscape-aesthetic-expressions-of-delight-ai-generative-png.png",
+      "mobile": "7896541230",
+      "password": "1235",
+      "cpassword": "1235"
+    },
+    {
+      "id": "b5cf",
+      "name": "ik",
+      "email": "ik@gmail.com",
+      "img": "https://img.freepik.com/premium-photo/cute-panda-bear-character-with-aesthetic-streetwear-clothes-outfit_992503-884.jpg",
+      "mobile": "5647893210",
+      "password": "5555",
+      "cpassword": "5555"
+    },
+    {
+      "id": "e491",
+      "name": "zik",
+      "email": "zk@gmail.com",
+      "img": "https://i.pinimg.com/736x/3d/fd/36/3dfd36899dff4fe2818c69a32f957d98.jpg",
+      "mobile": "78456123033",
+      "password": "2222",
+      "cpassword": "2222"
+    },
+    {
+      "id": "e68e",
+      "name": "tasha",
+      "email": "tk@gmail.com",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtmVr2QjhZ1UCmi2pVAhsNonHppc0R8Jtc6Q&s",
+      "mobile": "3214569870",
+      "password": "6666",
+      "cpassword": "6666"
+    }
+  ]
+}

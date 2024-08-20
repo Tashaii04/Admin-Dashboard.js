@@ -1,0 +1,52 @@
+#log{
+    padding:30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 350px;
+    box-shadow: 0px 0px 4px palevioletred;
+    margin-top: 10%;
+   
+
+} 
+
+body{
+    background-color: black;
+}
+
+#log div input{
+    width: 300px;
+    margin: 20px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid palevioletred;
+    color: palevioletred;
+    background-color: black;
+
+}
+
+#log div button{
+    width: 300px;
+    margin: 30px 10px 10px 10px;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: 2px solid palevioletred;
+    background-color: black;
+}
+
+#log div input::placeholder{
+    color: palevioletred;
+}
+
+#log div input:focus{
+    scale: 1.1;
+    transition: scale .2s;
+}
+
+#reg
+{
+    color: palevioletred;
+} 

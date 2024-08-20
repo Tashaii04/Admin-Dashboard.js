@@ -1,0 +1,173 @@
+{
+  "registration": [
+    {
+      "id": "d242"
+    },
+    {
+      "id": "e3fc"
+    },
+    {
+      "id": "8f3c"
+    },
+    {
+      "id": "728b",
+      "name": "tasha",
+      "username": "tasha@gmail.com",
+      "mobile": "7894561230",
+      "password": "t123",
+      "cpassword": "t123"
+    },
+    {
+      "id": "ab17",
+      "name": "urmi pagal",
+      "username": "pagal@gmail.com",
+      "mobile": "8888861230",
+      "password": "pagal3",
+      "cpassword": "pagal3"
+    },
+    {
+      "id": "c9ad",
+      "name": "Urmila",
+      "username": "pagal@gmail.com",
+      "mobile": "8888861230",
+      "password": "pagal3",
+      "cpassword": "pagal3"
+    },
+    {
+      "id": "34bc",
+      "name": "Mahi",
+      "username": "pagal@gmail.com",
+      "mobile": "8888861230",
+      "password": "pagal3",
+      "cpassword": "pagal3"
+    },
+    {
+      "id": "5b26",
+      "name": "Mahi",
+      "username": "pagal@gmail.com",
+      "mobile": "8888861230",
+      "password": "pagal3",
+      "cpassword": "pagal3"
+    }
+  ],
+  "product": [
+    {
+      "id": "3d80"
+    },
+    {
+      "id": "0a7b",
+      "name": "White bag",
+      "Prodcut": "bag",
+      "price": "30000",
+      "types": "Luxury"
+    },
+    {
+      "id": "5259",
+      "Brand": "SkinLove",
+      "Prodcut": "Sunscreen",
+      "price": "500",
+      "types": "SKIN CARE"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------ss-------------
+
+
+const addproduct = ()=>{
+    let product_name = document.querySelector('#product_name').value;
+    let product_price = document.querySelector('#product_price').value;
+    let product_image = document.querySelector('#product_image').value;
+    let product_brand = document.querySelector('#product_brand').value;
+    let product_review = document.querySelector('#product_review').value;
+    let product_rating = document.querySelector('#product_rating').value;
+
+    let product = {
+     "product_name":product_name,
+     "product_price":product_price,
+     "product_image":product_image,
+     "product_brand":product_brand,
+     "product_review":product_review,
+     "product_rating":product_rating
+  }
+
+    console.log(product);
+
+    let url = 'http://localhost:4000/product';
+    let method = {
+         method:"POST",
+         header:{
+              "content-type":"application/json"
+         },
+         body:JSON.stringify(product)
+    }
+    fetch(url,method);
+    let selectbg = document.querySelector('#website');
+    selectbg.style.filter = "none"
+    return false;
+}
+
+
+
+const show_form = ()=>{
+    let select = document.querySelector('#product_form');
+    select.style.display = "block";
+    let selectbg = document.querySelector('#website');
+    selectbg.style.filter = "blur(5px)"
+}
+function del(arg){
+    console.log(arg);
+    let url = `http://localhost:4000/product/${arg}`;
+    let method = {
+        method:"DELETE"
+    }
+    fetch(url,method)
+    
+}
+    function upd(e){
+        console.log(e)
+    }
+
+//IIFE
+(async function(){
+    let url = 'http://localhost:4000/product';
+    let data =await fetch(url);
+    let response =await data.json();
+
+    console.log(response);
+    document.querySelector('#showproductdata').innerHTML = response.map(e=>`
+         <tr>
+         <td>${e.product_name}</td>
+         <td>${e.product_price}</td>
+         <td><img width="70px" src="${e.product_image}"></td>
+         <td>${e.product_brand}</td>
+         <td>${e.product_review}</td>
+         <td>${e.product_rating}</td>
+         <td onclick="del('${e.id}')"><i class="fa fa-refresh"></i></td>
+         <td>${e.product_rating}</td>
+         </tr>
+         `).join(" ");
+
+    //
+})();
+
+// async function show1(){
+
+// }
+
+// const show2 = async ()=>{
+
+// }

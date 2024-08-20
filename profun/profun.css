@@ -1,3 +1,4 @@
+
 #product_form{
     padding: 30px;
     margin-left: auto;
@@ -14,6 +15,11 @@
     background-color: black;
     z-index: 10;
 }
+
+body{
+    /* background-color: black; */
+}
+
 
 #product_form div input{
     width: 300px;
@@ -73,32 +79,3 @@
 #updatebutton{
     display: none;
 }
-
-table
-{
-    margin-left: 300px;
-    margin-top: 20px;
-    color:#A52A2A;
-    font-size: large;
-    font-family: serif;
-    background: rgb(238,174,202);
-    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-    background: linear-gradient(to bottom right, #33cccc 25%, #006699 64%);
-}
-
-#ap
-{
-    margin-left: 50px;
-    color:#A52A2A;
-    font-size: large;
-    font-family: serif;
-    background: rgb(238,174,202);
-    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-    background: linear-gradient(to bottom right, #33cccc 25%, #006699 64%);
-    width: 100px;
-    height: 50px;
-}
-
-  
-
-
